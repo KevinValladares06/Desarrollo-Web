@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud Prestamo</title>
+        <style>
+            body{
+                background-color: rgb(147, 219, 250);
+            }
+        </style>
+</head>
+<body>
+    <h1>Solicitud de Prestamos Estudiantiles</h1>
+    <form action="Solicitud_Prestamo.html" method="GET">
+
+    <fieldset>
+        <legend>Información Personal</legend>
+        <label for="txtNombre">Nombre:</label>
+        <input required id="txtNombre" name="nombre" type="text" placeholder="Nombre Completo"/>
+        <br/>
+        <br/>
+
+        <label for="txtCorreo">Correo Electronico:</label>
+        <input required id="txtCorreo" name="email" type="email" placeholder="tucorreo@electronico.ico"/>
+        <br/>
+        <br/>
+
+        <label for="txtTelefono">Número de Telefono:</label>
+        <input required id="txtTelefono" name="telefono" type="text" pattern="\d*" title="Solo se permiten números" placeholder="Número de Telefono"/>
+        <br/>
+        <br/>
+
+        <label for="txtDirección">Dirección Actual:</label>
+        <input required id="txtDirección" name="dirección" type="text" placeholder="Ingresa tu Dirección"/>
+        <br/>
+        <br/>
+
+        <label for="txtCiudad">Ciudad:</label>
+        <input required id="txtCiudad" name="ciudad" type="text" placeholder="Ingresa tu Ciudad"/>
+        <br/>
+        <br/>
+
+        <label for="cmbDepartamento">Departamento:</label>
+            <select required id="cmbDepartamento" name="departamento">
+                <option value="" selected disabled hidden>Seleccione un departamento</option>
+            <option value="atlantida">Atlántida</option>
+            <option value="colon">Colón</option>
+            <option value="comayagua">Comayagua</option>
+            <option value="copan">Copán</option>
+            <option value="cortes">Cortés</option>
+            <option value="choluteca">Choluteca</option>
+            <option value="el-paraiso">El Paraíso</option>
+            <option value="francisco-morazan">Francisco Morazán</option>
+            <option value="gracias-a-dios">Gracias a Dios</option>
+            <option value="intibuca">Intibucá</option>
+            <option value="islas-de-la-bahia">Islas de la Bahía</option>
+            <option value="la-paz">La Paz</option>
+            <option value="lempira">Lempira</option>
+            <option value="ocotepeque">Ocotepeque</option>
+            <option value="olancho">Olancho</option>
+            <option value="santa-barbara">Santa Bárbara</option>
+            <option value="valle">Valle</option>
+            <option value="yoro">Yoro</option>
+            </select>
+        <br/>
+        <br/>
+
+        <label for="txtCodigopostal">Código Postal:</label>
+        <input id="txtCodigopostal" name="codigopostal" type="text" placeholder="Ingresar Codigo postal"/>
+        <br/>
+    </fieldset>
+    <br/>
+
+    <fieldset>
+        <legend>Opciones</legend>
+        <label>Nivel de Educación Actual:</label><br/>
+            <div>
+                <br/>
+                <input name="opcNivelActual" value="Preparatoria" id="opcPreparatoria" type="radio" />
+                    <label for="opcPreparatoria">Preparatoria</label><br/>
+
+                <input name="opcNivelActual" value="Licenciatura" id="opcLicenciatura" type="radio" />
+                    <label for="opcLicenciatura">Licenciatura</label><br/>
+
+                <input name="opcNivelActual" value="Maestría" id="opcMaestría" type="radio" />
+                    <label for="opcMaestría">Maestría</label><br/>
+
+                <input name="opcNivelActual" value="Doctorado" id="opcDoctorado" type="radio" />
+                    <label for="opcDoctorado">Doctorado</label>
+            </div>
+        <br/>
+    
+        <label>Programa de Estudio:</label><br/>
+            <div>
+                <br/>
+                <input name="opcProgramaEstudios" value="Ciencias de la Computación" id="opcCienciasComputación" type="radio" />
+                    <label for="opcCienciasComputación">Ciencias de la Computación</label><br/>
+
+                <input name="opcProgramaEstudios" value="Ingeniería" id="opcIngeniería" type="radio" />
+                    <label for="opcIngeniería">Ingeniería</label><br/>
+
+                <input name="opcProgramaEstudios" value="Economía" id="opcEconomía" type="radio" />
+                    <label for="opcEconomía">Economía</label><br/>
+
+                <input name="opcProgramaEstudios" value="Artes" id="opcArtes" type="radio" />
+                    <label for="opcArtes">Artes</label><br/>
+
+                <input name="opcProgramaEstudios" value="Otro" id="opcOtro" type="radio" />
+                <label for="opcOtro">Otro</label>
+                <input id="txtOtro" type="text" placeholder="Especifique"/>
+            </div>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <legend>Información de Prestamo</legend>
+        <br/>
+        <label for="txtMonto">Monto Solicitado:</label>
+        <input required id="txtMonto" name="monto" type="text" pattern="\d*" title="Solo se permiten números" placeholder="Ingresar Monto"/>
+        <br/>
+
+        <br/>
+        <label for="txtRazon">Razón de Solicitud del Prestamo:</label><br/>
+            <textarea required id="txtBlog" name="blog" placeholder="Razón del Prestamo"
+            cols="80" rows="10"
+            ></textarea>
+        <br/>
+    </fieldset>
+    <br/>
+    <button name="btnEnviar" type="submit">Enviar</button>
+    </form>
+</body>
+</html>

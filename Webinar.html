@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar de Iniciativas</title>
+</head>
+<body>
+    <h1>Webinar de Iniciativas Digitales para Emprendimientos Tecnológicos</h1>
+    <form action="Webinar.html" method="GET">
+    <br/>
+    <h2>¡Únete y se parte de nuestro webinar en línea!</h2>
+    <p> 
+        ¡No te pierdas el próximo "Webinar de Iniciativas Digitales para Emprendimientos Tecnológicos"! 
+        Únete a nosotros el próximo 15 de junio a las 18:00 horas para descubrir las últimas tendencias y herramientas 
+        digitales que están transformando el mundo de los negocios tecnológicos. Este evento en línea es una oportunidad única 
+        para emprendedores, innovadores y entusiastas de la tecnología que buscan impulsar sus proyectos y llevar sus ideas 
+        al siguiente nivel.
+    </p>
+    <p>
+        En el "Webinar de Iniciativas Digitales para Emprendimientos Tecnológicos", se destacarán los siguientes temas clave:
+    </p>
+        <ol>
+            <li>Transformación Digital y su Impacto en los Negocios</li>
+            <li>Herramientas y Plataformas de Marketing Digital</li>
+            <li>Gestión de Proyectos y Colaboración en Entornos Virtuales</li>
+            <li>Ciberseguridad para Emprendedores</li>
+            <li>Análisis de Datos e Inteligencia Artificial</li>
+        </ol>
+    <h2>Sobre el Webinar</h2>
+    <p>
+        En un mundo cada vez más digital, la capacidad de adaptarse a las nuevas tecnologías y aprovechar las 
+        oportunidades que estas ofrecen es crucial para el éxito de cualquier emprendimiento. 
+        Este webinar está diseñado para proporcionar a los participantes conocimientos prácticos y estrategias 
+        efectivas para integrar soluciones digitales en sus negocios. Los asistentes aprenderán sobre las últimas 
+        herramientas de marketing digital, gestión de proyectos, y plataformas de comercio electrónico que están 
+        revolucionando la forma en que las empresas operan y crecen.
+    </p>
+    <p>
+        El evento contará con la participación de expertos en tecnología y emprendimiento que compartirán sus experiencias y 
+        casos de éxito. A través de presentaciones dinámicas y sesiones de preguntas y respuestas, los asistentes tendrán 
+        la oportunidad de interactuar con líderes de la industria y obtener insights valiosos sobre cómo superar los desafíos 
+        más comunes en el ecosistema emprendedor. Además, se abordarán temas como la importancia de la ciberseguridad, 
+        el análisis de datos y la inteligencia artificial en la toma de decisiones empresariales.
+    </p>
+    <p>
+        No solo se trata de aprender, sino también de conectar. El webinar incluirá sesiones de networking virtual donde los 
+        participantes podrán interactuar entre sí, compartir ideas y establecer colaboraciones potenciales. 
+        Este es el momento perfecto para expandir tu red de contactos y encontrar posibles socios que compartan tu visión y 
+        pasión por la innovación. ¡Regístrate ahora y asegura tu lugar en este evento imperdible para emprendedores tecnológicos!
+    </p>
+
+        <legend>Información Personal</legend>
+        <fieldset>
+        <label for="txtNombre">Nombre:</label>
+        <input required id="txtNombre" name="Nombre" type="text" placeholder="Nombre Completo"/>
+        <br/>
+        <br/>
+
+        <label for="txtCorreo">Correo Electronico:</label>
+        <input required id="txtCorreo" name="Email" type="email" placeholder="tucorreo@electronico.ico"/>
+        <br/>
+        <br/>
+
+        <label for="txtTelefono">Número de Telefono:</label>
+        <input required id="txtTelefono" name="Telefono" type="text" pattern="\d*" title="Solo se permiten números" placeholder="Número de Telefono"/>
+        <br/>
+        <br/>
+
+        <label for="txtDirección">Dirección Actual:</label>
+        <input required id="txtDirección" name="Dirección" type="text" placeholder="Ingresa tu Dirección"/>
+        <br/>
+        <br/>
+
+        <label for="cmbPais">pais:</label>
+            <select required id="cmbPais" name="Pais">
+                <option value="" selected disabled hidden>Seleccione un Pais</option>
+            <option value="Honduras">Honduras</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="El Salvador">El Salvador</option>
+            <option value="Nicaragua">Nicaragua</option>
+            <option value="Costa Rica">Costa Rica</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="txtpreguntas">Consultas:</label><br/>
+            <textarea required id="txtBlog" name="Blog" placeholder="Escribenos tus consultas aqui"
+            cols="80" rows="10"
+            ></textarea>
+        </fieldset>
+    <br/>
+    <button name="btnEnviar" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
